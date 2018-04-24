@@ -52,6 +52,13 @@ main{
     flex: 1;
     justify-content: center;
 }
+  form p {
+        display: flex;
+    }
+input, textarea {
+    flex: 1;
+    margin: 0 0 0 20px;
+}
 footer{
     background-color: white;
     display:flex;
@@ -69,8 +76,15 @@ footer nav li{
 @media screen and (max-width: 30rem){
     header,
     main,
-    footer{
+    footer,
+    form p {
         flex-direction:column;
+    }
+    form input, textarea {
+        margin: 2px 0;
+    }
+    form select {
+        margin: 0;
     }
 }
 
